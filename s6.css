@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+}
+.hd{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    background-image: url(pictures/unnamed.png);
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: 90px;
+    
+
+}
+.hd li{
+    display: inline-block;
+    
+}
+.list{
+    display: flex;
+    justify-content: right;
+    font-size: 15pt;
+    position: relative;
+    bottom: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+.list a{
+
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.list a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+.mm{
+    color: rgb(227, 230, 232);
+    padding: 20px;
+    margin-left: 80px;
+    
+}
+.mid{
+    /* background:radial-gradient(#eef0f3,#b69bd8); */
+    background-image: url('pictures/main2.jpg'); 
+    background-blend-mode:overlay ;
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background-blend-mode:overlay; 
+    height:80vh;
+    width: 100%;
+    background-position:center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+.mbox{
+    width: 380px;
+    height: 350px;
+    border-color: 2px solid rgb(26, 25, 26);
+    background: linear-gradient(135deg, #f2eff5, #555456b0);
+    border-radius: 20px;
+    background-blend-mode: overlay;
+    position: relative;
+    padding: 5px;
+    margin:0;
+    left: 450px;
+    top: 50px;
+    
+    
+}
+h3
+{
+    font-size: 20pt;
+    position: relative;
+    top:30px;
+    color: rgb(18, 17, 17);
+    border-bottom: 3px solid rgba(243, 242, 242, 0.495);
+}
+.inp1{
+        width: 300px;
+        height: 40px;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        position: relative;
+        top: 70px;
+        background-color: rgba(11, 11, 11, 0.662);
+        background-blend-mode:lighten;
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+        color: white;
+        font-size: 13pt;
+
+}
+.inp2{
+    width: 300px;
+        height: 40px;
+        padding: 10px;
+        margin: auto;
+        border: none;
+        position: relative;
+        top: 100px;
+        background-color: rgba(11, 11, 11, 0.662);
+        background-blend-mode:lighten;
+        border-bottom: 2px solid black;
+        border-radius: 10px;
+        color: white;
+        font-size: 13pt
+}
+.inp1:hover{
+
+    background-color: rgba(18, 18, 17, 0.397);
+    cursor:text;
+}
+.inp2:hover{
+
+    background-color: rgba(18, 18, 17, 0.397);
+    cursor:text;
+}
+.lin{
+    border-bottom: 3px solid rgba(243, 242, 242, 0.495);
+    position: relative;
+    top:210px
+}
+.fp{
+    position: relative;
+    top: 80px;
+    right: 50px;
+    color: rgb(239, 234, 234);
+    text-decoration: none;
+    
+}
+
+.fp1{
+    position: relative;
+    top: 130px;
+    right: 30px;
+    color: rgb(252, 247, 247);
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.adm{
+    position: relative;
+    top: 200px;
+    right: 10px;
+    
+    
+}
+.adm a{
+    background-color: rgba(11, 11, 11, 0.662);
+    background-blend-mode:lighten;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    font-size: 13pt;
+    text-decoration: none
+}
+.sub{
+    padding: 10px;
+    margin: auto;
+    position: relative;
+    top: 115px;
+    right: 10px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d4c7e4, #0b0c0c);
+    font-size: 12pt;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.sub:hover{
+    background-color: rgba(3, 3, 3, 0.589);
+    color: white;
+    border-color: white;
+}
+.adm a:hover{
+    color: black;
+    border-color:white
+}

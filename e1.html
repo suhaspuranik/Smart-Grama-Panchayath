@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Loading Screen</title>
+  <style>
+    body {
+      background-image: url('pictures/main2.jpg'); 
+      background-blend-mode:overlay; 
+      height:80vh;
+      width: 100%;
+        background-position:center;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      /* text-align: center; */
+    position: relative;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: rgb(30, 3, 49);
+      font-weight: 900;
+    }
+    
+    .loader {
+      text-align: center;
+    }
+    
+    .loader h2 {
+      font-size: 54px;
+      margin-bottom: 16px;
+    }
+    
+    .loader span {
+      display: inline-block;
+      font-size: 70pt;
+      animation: fade 1.5s ease-in-out infinite;
+    }
+    
+    @keyframes fade {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <h2>Loging in...</h2>
+    <span>.</span>
+    <span>.</span>
+    <span>.</span>
+  </div>
+  
+  <script>
+    setTimeout(function() {
+      window.location.href = "userl.html"; // Redirect to another page
+    }, 3000); // 5 seconds delay (5000 milliseconds)
+  </script>
+</body>
+</html>

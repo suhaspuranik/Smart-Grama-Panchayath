@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Poppins',sans-serif;  */
+    
+}
+.hd{
+    height: 200vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(unnamed.png);
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: 90px;
+    
+
+}
+.hd li{
+    display: inline-block;
+    
+}
+.list{
+    display: flex;
+    justify-content: right;
+    font-size: 15pt;
+    position: relative;
+    bottom: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.list a{
+
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.list a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+.tit{
+    color: rgb(227, 230, 232);
+    padding: 20px;
+    margin-left: 80px;
+    
+}
+.mid{
+    display:flex;
+    
+    background: rgba(0, 166, 255, 0.317);
+    background-image: url('main.jpg'); 
+    /* background-blend-mode:overlay ; */
+    height:300vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.app{
+    text-decoration: none;
+    display: flex;
+    width: 750px;
+    height: 260vh;
+    background: linear-gradient(135deg, #0c0c0c8a, #0a0a0a5d);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    position: relative;
+    border: 10px solid black;
+    top: 80px;
+    right: 120px;
+
+    
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    background: linear-gradient(135deg, #08080873, #0a0a0a);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    color:rgb(253, 250, 250) ;
+    position: relative;
+    right: 100px;
+    top:50px;
+}
+.logout a{
+    text-decoration: none;
+    color: rgb(254, 247, 247);
+    padding: 10px;
+    font-size: 15pt;
+}
+.logout :hover{
+    opacity: 0.9;
+    color: #100f0f;
+    /* border:3px solid black; */
+    /* background-color: cornsilk; */
+    /* color: #100f0f; */
+    
+}
+
+.card__link,
+  .card__exit,
+  .card__icon {
+    font-weight: 900;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    color: rgba(6, 5, 5, 0.9);
+    font-family: 'Noto Serif', serif;
+
+
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(26, 32, 217, 0.388);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    color: #054a6a;
+    grid-row: 2/3;
+    font-size: 20px;
+  }
+  
+  .card__title {
+    font-family: 'Alkatra', cursive;
+    letter-spacing: 2px;
+    font-size: larger;
+    grid-row: 3/4;
+    font-weight: 900;
+    color: #100f0f;
+  }
+  
+  .card__apply {
+    font-family: 'Alkatra', cursive;
+    grid-row: 4/5;
+    align-self: center;
+    font-weight: 100;
+  }
+  .card-1 {
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0.813, 0.813, 0.813, 0.813);
+    position: relative;
+    height: 170px;
+    background: radial-gradient(#1fe4f5, #3fbafe);
+  }
+  
+  .card-2 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top: 30px;
+    background: radial-gradient(#fbc1cc, #fa99b2);
+    border-radius: 10px;
+    height: 170px;
+  }
+  
+  .card-3 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top: 60px;
+    height: 130px;
+    background: radial-gradient(#76b2fe, #b69efe);
+    border-radius: 10px;
+    height: 170px;
+    
+  }
+  
+  .card-4 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top: 90px;
+    height: 130px;
+    background: radial-gradient(#60efbc, #58d5c9);
+    border-radius: 10px;
+    height: 170px;
+  }
+  
+  .card-5 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top:120px;
+    height: 130px;
+    background: radial-gradient(#f588d8, #c0a3e5);
+    border-radius: 10px;
+    height: 170px;
+  }
+  .card-6 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top:150px;
+    position: relative;
+    background: radial-gradient(#6a1ff5, #8668ef);
+    border-radius: 10px;
+    height: 170px;
+  }
+  .card-7 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top:180px;
+    position: relative;
+    background: radial-gradient(#2df51f, #70e15c);
+    border-radius: 10px;
+    height: 170px;
+  }
+  .card-8 {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top:210px;
+    position: relative;
+    background: radial-gradient(#f5871f, #cab25b);
+    border-radius: 10px;
+    height: 170px;
+  }
+  .card-1:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-2:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-3:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-4:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-5:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-6:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-7:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .card-8:hover{
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  .mid label{
+    
+    max-height: 50px;
+    width: 300px;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 15pt;
+    font-weight: 900;
+    font-family: 'Noto Serif', serif;
+    color:rgb(14, 14, 13);
+    border-bottom: 2px solid rgba(69, 16, 16, 0.651);
+  }

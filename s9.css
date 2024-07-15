@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+}
+.hd{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    background-image: url(pictures/unnamed.png);
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: 90px;
+
+}
+.hd li{
+    display: inline-block;
+    
+}
+.list{
+    display: flex;
+    justify-content: right;
+    font-size: 20pt;
+    position: relative;
+    bottom: 60px;
+}
+
+.list a{
+
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding-right: 30px;
+    
+}
+.list a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+.mm{
+    color: rgb(227, 230, 232);
+    padding: 20px;
+    margin-left: 80px;
+    
+    
+}
+.mid{
+    /* background: #74a8c0; */
+    background-image: url(pictures/main2.jpg);
+    display: flex;
+    background-blend-mode: overlay;
+    
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    height:110vh;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+   background-size: 50%;
+   background-repeat: no-repeat;
+   text-align: center;
+   position: relative;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    justify-content: center;
+    
+}
+.content{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 500px;
+    background-color: rgba(12, 12, 12, 0.82);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(250, 247, 247);
+    position: relative;
+    top: 40px;
+    /* border: 1px solid black; */
+    
+}
+ol{
+    list-style-type: none;
+}
+.list1{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    background: radial-gradient(#dac1fb, #474748);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    right: 150px;
+    top:30px;
+    opacity: 1;
+}
+.list1 img{
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: radial-gradient(#dac1fb, #474748);
+    height: 50px;
+    position: relative;
+    display: flex;
+    top: -75px;
+    right: -50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+}
+.list2{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    background: radial-gradient(#dac1fb, #474748);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top: -120px;
+    left: 150px;
+}
+.list2 img{
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: radial-gradient(#dac1fb, #474748);
+    height: 50px;
+    position: relative;
+    display: flex;
+    top: -75px;
+    right: -80px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+}
+.list3{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    background: radial-gradient(#dac1fb, #474748);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top:0px;
+    right:150px;
+    
+}
+.list3 img{
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: radial-gradient(#dac1fb, #474748);
+    height: 50px;
+    position: relative;
+    display: flex;
+    top: -75px;
+    right: -70px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+}
+.list4{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    background: radial-gradient(#dac1fb, #474748);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    position: relative;
+    top: -150px;
+    left: 150px;
+}
+.list4 img{
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: radial-gradient(#dac1fb, #474748);
+    height: 50px;
+    position: relative;
+    display: flex;
+    top: -75px;
+    right: -80px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+}
+.list1 .mp{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: rgb(16, 15, 15);
+    font-weight: 900;
+    font-size: 20pt;
+    position: relative;
+    right: 25px;
+   
+    
+}
+
+.list2 .ra{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    position: relative;
+    justify-content: center;
+    top: 0px;
+    font-weight: 900;
+    left: -15px; 
+    font-size: 20pt;
+   
+    
+}
+.list3 .ta{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    position: relative;
+    justify-content: center;
+    top: 0px;
+    font-weight: 900;
+    left: -20px; 
+    font-size: 15pt;
+   
+    
+}
+.list4 i{
+    position: relative;
+    font-size: 30pt;
+    top:-20px;
+    left: 90px;
+    display: flex;
+        
+}
+.list4 .rc{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    position: relative;
+    justify-content: center;
+    top: 0px;
+    font-weight: 900;
+    left: -15px; 
+    font-size: 20pt;
+   
+    
+}
+.list1:hover{
+    opacity: 0.9;
+    border:3px solid rgb(255, 255, 255);
+}
+.list2:hover{
+    opacity: 0.9;
+    border:3px solid rgb(244, 242, 242);
+}
+.list3:hover{
+    opacity: 0.9;
+    border:3px solid rgb(253, 253, 253);
+}
+.list4:hover{
+    opacity: 0.9;
+    border:3px solid rgb(249, 248, 248);
+}
+.logout{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    background: linear-gradient(135deg, #dfcfcf, #3a2fb1ea);
+    padding: 25px 30px7;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    color:black ;
+    position: relative;
+    left: 100px;
+    top:50px;
+}
+.logout a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 15pt;
+}
+.logout:hover{
+    opacity: 0.9;
+    border:3px solid black;
+    
+}

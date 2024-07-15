@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <title>SMART PANCHAYATH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="s19.css">
+<header class="hd">
+        <div class="mm">
+            <h1 >SMART GRAMA PANCHAYATH</h1>
+        </div>
+    <div>
+        <nav class="list">
+            <ol>
+                
+                <li><a href="request.html"> <i class="fa-solid fa-right-from-bracket"></i> BACK</a></li>
+
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <div class="heading">
+        <h1>WATER CONNECTION</h1>
+    </div>
+<body>
+<div class="mid">
+    <form method="post" action="waterf.php" enctype="multipart/form-data">
+    <!-- <div class="Basic-info">
+        <h2>Applicant information</h2>
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Applicant Name</span>
+                <input type="text" placeholder="Enter the name" required name="name">
+            </div>
+            <div class="input-box">
+                <span class="details">Company Name(if applicable)</span>
+                <input type="text" placeholder="Enter company name" name="cname">
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" placeholder="Enter your email " required name="email">
+            </div>
+            <div class="input-box">
+                <span class="details">Permanant Address</span>
+                <textarea placeholder="Enter your Address " cols="20" required name="address"></textarea>
+            </div>
+        </div>
+    </div> -->
+    <div class="Basic-info">
+        <h2>Property Details</h2>
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Applicant Name</span>
+                <input type="text" placeholder="Enter the name" required name="name">
+            </div>
+            <div class="input-box">
+                <span class="details">Property/House No </span>
+                <input type="number" placeholder="Enter property No"  required name="pid">
+            </div>
+            <div class="input-box">
+                <span class="details">Property Location</span>
+                <textarea placeholder="Enter Location" cols="20" required name="paddress"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="income-info">
+        <h2>Connection-information</h2>
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Connection Type</span>
+                <select name="ctype" class="cat" required>
+                    <option value="sel">---------Select---------</option>
+                    <option value="New Connection">New Connection</option>
+                    <option value="Repair Connection">Repair Connection</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <span class="details">Specify the Problem(if applicable)</span>
+                <textarea placeholder="Specify problem with existing Connection" cols="20" required name="work"></textarea>
+            </div>
+            <div class="input-box">
+                <span class="details">Connection For</span>
+                <select name="cfor" class="cat" required>
+                    <option value="sel">---------Select---------</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Industrial">Industrial</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="upload-file">
+        <h2>Documents</h2>
+        <div class="user-details">
+        <div class="input-box1">
+            <span class="details">Id proof of Owner (Adharcard,DL,pancard etc)</span>
+            <input type="file" required name="iproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">Address proof(ratio card,passport etc)</span>
+            <input type="file" required name="aproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">Property License</span>
+            <input type="file" required name="hproof">
+        </div>
+        <div class="button">
+            <input type="submit" value="Apply" name="apply">
+          </div>
+        </form>
+        <br><br>
+        <form method="post" action="request.html">
+          <div class="button2">
+              <input type="submit" value="CANCEL">
+            </div>
+        </form>
+    </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

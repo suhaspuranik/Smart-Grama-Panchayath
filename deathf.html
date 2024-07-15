@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<head>
+    <title>SMART PANCHAYATH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="s18.css">
+<header class="hd">
+        <div class="mm">
+            <h1 >SMART GRAMA PANCHAYATH</h1>
+        </div>
+    <div>
+        <nav class="list">
+            <ol>
+                
+                <li><a href="request.html"> <i class="fa-solid fa-right-from-bracket"></i> BACK</a></li>
+
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <div class="heading">
+        <h1>DEATH CERTIFICATE</h1>
+    </div>
+<body>
+<div class="mid">
+    <form method="post" action="deathf.php" enctype="multipart/form-data">
+    <!-- <div class="Basic-info">
+        <h2>Applicant/Informer Detail</h2>
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Name </span>
+                <input type="text" placeholder="Enter the name" required name="name">
+            </div>
+            <div class="input-box">
+                <span class="details">Relation with Deceased</span>
+                <input type="text" placeholder="Enter the relation" required name="relation">
+            </div>
+            <div class="input-box">
+                <span class="details">Mobile Number</span>
+                <input type="number" placeholder="Enter Mobile Number" required name="cnum" >
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" placeholder="Enter your email " required name="email">
+            </div>
+            <div class="input-box">
+                <span class="details">Permanant Address</span>
+                <textarea placeholder="Enter your Address " cols="20" required name="address"></textarea>
+            </div> -->
+        
+    
+        <!-- <div class="input-box">
+            <span class="details">Adhar Number</span>
+            <input type="number" placeholder="Enter your adhar number" required name="adhar">
+          </div>    -->
+
+        <!-- </div>
+    </div> -->
+    <div class="Basic-info">
+        <h2>Deceased Details</h2>
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">NAME</span>
+                <input type="text" placeholder="Enter name of Deceased "  required name="dname">
+            </div>
+            <div class="input-box">
+                <span class="details">FATHERS NAME</span>
+                <input type="text" placeholder="Enter fathers name "  required name="fname">
+            </div>
+            <div class="input-box">
+                <span class="details">MOTHERS NAME</span>
+                <input type="text" placeholder="Enter Mothers name "  required name="mname">
+            </div>
+            <div class="input-box">
+                <span class="details">RELIGION</span>
+                <select name="religion" class="cat" required>
+                    <option value="sel">---------Select---------</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Cristian">Cristian</option>
+                    <option value="Others">Others</option>
+                </select>
+
+            </div>
+            <div class="input-box">
+                <span class="details">DATE OF BIRTH</span>
+                <input type="date"   required name="dob">
+            </div>
+            <!-- <div class="DOB">
+                <span class="DOB-details">DATE OF BIRTH</span>
+                <input type="number" name="day" size="2" maxlength="2" placeholder="Day" min="1" max="31" class="day" required>
+                <select name="month" class="month" required>
+                    <option value="Jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                </select>
+                <input type="number" name="year" minlength="4" maxlength="4" placeholder="Year" min="1991" max="2005" class="year" required>
+            </div> -->
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1" required value="male">
+                <input type="radio" name="gender" id="dot-2" required value="female">
+                <input type="radio" name="gender" id="dot-3" required value="others">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Others</span>
+                </label>
+            </div>
+        
+        </div>
+    <div class="income-info">
+        <h2>Death-information</h2>
+        <div class="input-box">
+            <span class="details">PLACE OF DEATH</span>
+            <select name="pob" class="cat" required>
+                <option value="sel">---------Select---------</option>
+                <option value="Hospital">Hospital</option>
+                <option value="House">House</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <span class="details">HOSPITAL NAME(if hospital)</span>
+            <input type="text" placeholder="Enter hospital name"  required name="hname">
+        </div>
+        <div class="input-box">
+            <span class="details">CAUSE OF DEATH</span>
+            <input type="text" placeholder="Enter the reason for death"  required name="cod">
+        </div>
+        <div class="input-box">
+            <span class="details">DATE OF BIRTH</span>
+            <input type="date"   required name="dod">
+        </div>
+        <!-- <div class="DOB">
+            <span class="DOB-details">DATE OF DEATH</span>
+            <input type="number" name="dday" size="2" maxlength="2" placeholder="Day" min="1" max="31" class="day" required>
+            <select name="dmonth" class="month" required>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+            </select>
+            <input type="number" name="dyear" minlength="4" maxlength="4" placeholder="Year" min="1991" max="2005" class="year" required>
+          </div> -->
+          <div class="input-box">
+            <span class="details">TIME OF DEATH</span>
+            <input type="time"  required name="time" >
+        </div>
+         <!-- <div class="input-box">
+            <span class="details">Category</span>
+            <select name="category" class="cat" required>
+                <option value="sel">---------Select---------</option>
+                <option value="Genaral">Genaral</option>
+                <option value="OBC">OBC</option>
+                <option value="SC/ST">SC/ST</option>
+                <option value="Others">Others</opt  ion>
+            </select>
+        </div> -->
+        <!-- <div class="input-box">
+            <span class="details">Annual Income</span>
+            <input type="number" placeholder="Enter annual income "  required name="income">
+        </div> -->
+    </div>
+    <div class="upload-file">
+        <h2>Documents</h2>
+        <div class="input-box1">
+            <span class="details">ID PROOF OF APPLICANT(Adharcard,DL,pancard etc)</span>
+            <input type="file" required name="iproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">ID PROOF OF DECEASED(Adharcard,DL,pancard etc)</span>
+            <input type="file" required name="diproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">ADDRESS PROOF(ratio card,passport etc)</span>
+            <input type="file" required name="aproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">DEATH PROOF</span>
+            <input type="file" required name="dproof">
+        </div>
+        <div class="button">
+            <input type="submit" value="Apply" name="apply">
+          </div>
+        </form>
+        <br><br>
+        <form method="post" action="request.html">
+          <div class="button2">
+              <input type="submit" value="CANCEL">
+            </div>
+        </form>
+    </div>
+    </form>
+</div>
+</body>
+</html>

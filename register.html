@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+    <title>SMART PANCHAYATH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="s4.css">
+<body>
+    <header class="hd">
+        <div class="mm">
+            <h1 >SMART GRAMA PANCHAYATH</h1>
+        </div>
+    <div>
+        <nav class="list">
+            <ol>
+                <li><a href="main.html"><i class="fa fa-home"></i> HOME</a></li>
+                <li><a href="about.html"><i class="fa fa-address-card"></i> ABOUT</a></li>
+                <li><a href="service.html"><i class="fa fa-circle-info"></i> SERVICE</a></li>
+                <li><a href="feedback.html"><i class="fa fa-comment-dots"></i> FEEDBACK</a></li>
+                <li><a href="Admin.html"> <i class="fa fa-user"></i> ADMIN</a></li>
+
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <div class="mid">
+        <div class="mbox">
+            <div class="title"><i class="fa fa-pen-to-square"></i> REGISTER HERE</div>
+            <div class="content">
+            <form method="post" action="register.php">
+                <div class="user-details">
+                    <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required name="fname">
+                </div>
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Enter your username" required name="uname">
+            </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" required name="email">
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" pattern="[0-9]{10}" title="Please enter valid contact number" name="cnum" placeholder="Contact Number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ADDRESS</span>
+            <textarea rows="5" cols="50" placeholder="Enter your ADDRESS" required name="address"></textarea>
+          </div>
+          <div class="input-box">
+            <span class="details">DATE OF BIRTH</span>
+            <input type="date" id="dob" name="dob" max="" title="Age must be 18 years or above" required>
+            <script>
+              // Get the current date
+              var currentDate = new Date();
+          
+              // Subtract 18 years from the current date
+              var minDate = new Date(currentDate.getFullYear() - 18, currentDate.getMonth(), currentDate.getDate());
+          
+              // Format the minimum date to be compatible with the input field
+              var minDateString = minDate.toISOString().split('T')[0];
+          
+              // Set the minimum date on the input field
+              document.getElementById('dob').setAttribute('max', minDateString);
+            </script>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Create Password" name="pass" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" title="Password must be at least 8 characters long and include at least one lowercase letter, one uppercase letter, and one digit." required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required name="cpass" minlength="8" maxlength="16">
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" required value="male">
+          <input type="radio" name="gender" id="dot-2" required value="female">
+          <input type="radio" name="gender" id="dot-3" required value="others">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Others</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+      <form method="post" action="login.html">
+        <div class="button2">
+            <input type="submit" value="CANCEL">
+          </div>
+      </form>
+    </div>
+  </div>
+
+    </body>
+    </html>

@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif&family=Nova+Oval&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+    max-height: 140vh;
+}
+.hd{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    background-image: url(pictures/unnamed.png);
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: 90px;
+
+}
+.hd li{
+    display: inline-block;
+    
+}
+.list{
+    display: flex;
+    justify-content: right;
+    font-size: 15pt;
+    position: relative;
+    bottom: 60px;
+}
+
+.list a{
+
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.list a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+.heading{
+    text-align: center;
+    background: radial-gradient(#faf5f5, #f1f7f6bd);
+    width: 100%;
+    height: 90px;
+    color: rgb(27, 27, 27);
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 5px;
+    border-radius: 5px;
+}
+.mm{
+    color: rgb(227, 230, 232);
+    padding: 20px;
+    margin-left: 80px;
+    
+    
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    /* background:radial-gradient(#eef0f3,#b69bd8); */
+    background-image: url('pictures/main2.jpg'); 
+    background-blend-mode:overlay ;
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background-blend-mode:overlay; 
+    height:80vh;
+    width: 100%;
+    background-position:center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    /* text-align: center; */
+    position: relative;
+    
+}
+.Basic-info{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    width: 450px;
+    height: 350px;
+    background: radial-gradient(#faf5f5, #eb840f08);
+    text-align: center;
+    /* align-content: center; */
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color: rgb(15, 14, 14);
+    font-weight: 900;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 10px rgba(6, 6, 6, 0.813);
+    border-radius: 5px;
+    border: 10px solid rgba(14, 14, 14, 0.934);
+    font-size: 20pt;
+}
+.Basic-info i{
+  position: relative;
+  top: -35px;
+  left: 45px;
+  font-weight: 900;
+}
+.mbox{
+    max-width: 700px;
+    width: 100%;
+    background: radial-gradient(#fbc1cc, #fa99b2);
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:100px;
+    
+}
+.mbox .title
+{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.mbox .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 700px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #141414, #131213);
+}
+.content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 300px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 350px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #cccccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+
+
+  form .input-box1 span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    /* margin-right: 20px; */
+    padding-right: 10px;
+  }
+  .user-details .input-box1 input{
+    height: 45px;
+    width: 250px;
+     outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    /*border: 1px solid #cccccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813); */
+  }
+
+
+
+  .user-details .input-box textarea{
+    height: 100px;
+    width: 350px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  form .DOB span.DOB-details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 20px;;
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+  .user-details .DOB input{
+    height: 45px;
+    margin-left: 20px;;
+    width: 100px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+  .user-details .month{
+    height: 45px;
+    width: 400px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+  form .PASSWORD span.PASSWORD-details{
+    display: flex;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    justify-content: space-around;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .PASSWORD input{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    height: 45px;
+    width: 330px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+  form .CPASSWORD span.CPASSWORD-details{
+    display: flex;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    justify-content: space-around;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .user-details .CPASSWORD input{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 0px;
+    right: -20px;
+    height: 45px;
+    width: 330px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border:2px solid #080808cb;
+  }
+  .user-details .PASSWORD input:focus,
+  .user-details .PASSWORD input:valid{
+    border:2px solid #080808cb;
+  }
+  .user-details .CPASSWORD input:focus,
+  .user-details .CPASSWORD input:valid{
+    border:2px solid #080808cb;
+  }
+  .user-details .DOB input:focus,
+  .user-details .DOB input:valid{
+    border:2px solid #080808cb;
+  }
+  
+ 
+   form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+   }
+   form .category{
+     display: flex;
+     width: 80%;
+     margin: 14px 0 ;
+     justify-content: left;
+     margin-left: 20px;
+   }
+   form .category label{
+     display: flex;
+     cursor: pointer;
+     text-align: left;
+   }
+   form .category label .dot{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+  }
+   #dot-1:checked ~ .category label .one,
+   #dot-2:checked ~ .category label .two,
+   #dot-3:checked ~ .category label .three{
+     background: #121113;
+     border-color: #d9d9d9;
+   }
+   form input[type="radio"]{
+     display: none;
+   }
+   form .button{
+     height: 45px;
+     margin: 35px 0;
+     
+    
+   }
+   form .button input{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    left: 30px;
+     height: 100%;
+     width: 250px;
+     border-radius: 5px;
+     border: none;
+     color: #0f0f0f;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #d1e0d2, #4297de);
+     text-align: right;
+     align-content: center;
+   }
+   form .button2{
+    height: 45px;
+    margin: 35px 0;
+    
+   
+  }
+  form .button2 input{
+   display: flex;
+   position: relative;
+   top: -80px;
+    justify-content: center;
+   left: 28px;
+    height: 100%;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    color: #0c0c0c;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #d1e0d2, #4297de);
+    text-align: right;
+    align-content: center;
+  }
+   form .button input:hover{
+    color: white;
+    background: linear-gradient(-135deg,#5a7a5a,  #690bd4);
+    }
+    form .button2 input:hover{
+        color: white;
+        background: linear-gradient(-135deg,#5a7a5a,  #690bd4);
+        }
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+
+    }
+    @media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+  }
+   img{
+    position: relative;
+    top:-1400px;
+    right: -1100px;
+   }
+   .download{
+    position:  relative;
+    top:-400px;
+    left: 200px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    font-size: 15pt;
+    cursor: pointer;
+   }
+   .download:hover{
+    background-color: white;
+    color: black;
+   }
+   .button4{
+    position:  relative;
+    /* top:-400px;
+    left: 200px; */
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: black;
+    border-radius: 10px;
+    font-size: 15pt;
+    cursor: pointer;
+   }

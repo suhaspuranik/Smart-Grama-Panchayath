@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif&family=Nova+Oval&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alkatra', cursive;
+    /* max-height: 140vh; */
+}
+.hd{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    background-image: url(pictures/unnamed.png);
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    background-size: 90px;
+
+}
+.hd li{
+    display: inline-block;
+    
+}
+.list{
+    display: flex;
+    justify-content: right;
+    font-size: 15pt;
+    position: relative;
+    bottom: 60px;
+}
+
+.list a{
+
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.list a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+.heading{
+    text-align: center;
+    background: radial-gradient(#faf5f5, #f1f7f6bd);
+    width: 100%;
+    height: 90px;
+    color: rgb(27, 27, 27);
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 5px;
+    border-radius: 5px;
+}
+.mm{
+    color: rgb(227, 230, 232);
+    padding: 20px;
+    margin-left: 80px;
+    
+    
+}
+.mid{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* padding: 10px; */
+    background: rgb(232, 239, 240);
+    /* background-image: url('b2.jpeg'); */
+    background-blend-mode:overlay;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    /* max-height: 150vh; */
+    /* align-content: center; */
+    background-size: cover;
+    /* text-align: center; */
+    
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: calc(100% / 2 - 20px);
+  }
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+  .user-details .input-box input{
+    height: 45px;
+    width: 90px;
+    align-content: center;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #cccccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+  .user-details .month{
+    height: 45px;
+    width: 200px;
+    position:relative;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+  }
+
+
+.mid table {
+    width: 100%;
+    text-align: justify;
+    border-collapse: collapse;
+    background-color: beige;
+    
+  }
+  
+  .mid table th,
+  table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dfa4a4a5;
+  }
+  
+  .mid table th {
+    background:radial-gradient(#cccccc,#4af052cc)
+  }
+  
+  .mid table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .mid table tr:hover {
+    background-color: #e6e6e6;
+  }
+  .mid table input{
+    height: 35px;
+    width: 100px;
+    text-align: justify;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #cccccc;
+    /* border-bottom-width: 2px; */
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.813);
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mid table .approve{
+    position: relative;
+    top: 10px;
+    background-color: black;
+    color: white;
+  }
+  .mid table .reject{
+    /* position: relative;
+    top: 10px; */
+    background-color: black;
+    color: white;
+  }
+  .mid table .approve:hover{
+    background-color: rgb(249, 246, 246);
+    color: rgb(5, 5, 5);
+  }
+  .mid table .reject:hover{
+    background-color: rgb(249, 246, 246);
+    color: rgb(5, 5, 5);
+  }

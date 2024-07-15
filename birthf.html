@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+    <title>SMART PANCHAYATH</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<link rel="stylesheet" href="s17.css">
+<header class="hd">
+        <div class="mm">
+            <h1 >SMART GRAMA PANCHAYATH</h1>
+        </div>
+    <div>
+        <nav class="list">
+            <ol>
+                
+                <li><a href="request.html"> <i class="fa-solid fa-right-from-bracket"></i> BACK</a></li>
+
+            </ol>
+        </nav>
+    </div>
+    </header>
+    <div class="heading">
+        <h1>BIRTH CERTIFICATE</h1>
+    </div>
+<body>
+<div class="mid">
+    <form method="post" action="birthf.php" enctype="multipart/form-data">
+    <div class="Basic-info">
+        <h2>Basic information</h2>
+        <div class="user-details">
+            <div class="input-box">
+            <span class="details">Name of the child born</span>
+            <input type="text" placeholder="Enter name of child" required name="name">
+        </div>
+        <div class="input-box">
+            <span class="details">Fathers Name</span>
+            <input type="text" placeholder="Enter your fathers name" required name="fname">
+        </div>
+        <div class="input-box">
+            <span class="details">Mothers Name</span>
+            <input type="text" placeholder="Enter your mothers name" required name="mname" >
+        </div>
+        <div class="input-box">
+            <span class="details">Religion</span>
+            <select name="religion" class="cat" required>
+                <option value="sel">---------Select---------</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Muslim">Muslim</option>
+                <option value="Cristian">Cristian</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <!-- <div class="input-box">
+            <span class="details">Adhar Number</span>
+            <input type="number" placeholder="Enter your adhar number" required name="adhar">
+          </div> -->
+           <div class="input-box">
+                <span class="details">DATE OF BIRTH</span>
+                <input type="date" id="myDate" onchange="setMaxDate()" name="dob">
+                <script>
+                    function setMaxDate() {
+                    var currentDate = new Date().toISOString().split('T')[0];
+                    document.getElementById("myDate").setAttribute("max", currentDate);
+                    }
+                </script>
+            </div>
+          
+          <div class="input-box">
+            <span class="details">Time Of Bith</span>
+            <input type="time"  required name="time" >
+        </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" required value="male">
+            <input type="radio" name="gender" id="dot-2" required value="female">
+            <input type="radio" name="gender" id="dot-3" required value="others">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Male</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Female</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three"></span>
+              <span class="gender">Others</span>
+              </label>
+            </div>
+
+    </div>
+        <!-- <div class="contact-info">
+            <h2>Contact information(Parent)</h2>
+            <div class="input-box">
+                <span class="details">Contact Number</span>
+                <input type="number" placeholder="Enter your Contact no "  required name="cnum">
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="email" placeholder="Enter your email " required name="email">
+            </div>
+            <div class="input-box">
+                <span class="details">Permanant Address</span>
+                <textarea placeholder="Enter your Address " cols="20" required name="address"></textarea>
+            </div>
+        </div> -->
+    <div class="income-info">
+        <h2>Birth-information</h2>
+        <div class="user-details">
+        <div class="input-box">
+            <span class="details">Place of Birth</span>
+            <select name="pob" class="cat" required>
+                <option value="sel">---------Select---------</option>
+                <option value="Hospital">Hospital</option>
+                <option value="House">House</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <span class="details">Hospital Name(if hospital)</span>
+            <input type="text" placeholder="Enter hospital name"  required name="hname">
+        </div>
+        <!-- <div class="input-box">
+            <span class="details">Category</span>
+            <select name="category" class="cat" required>
+                <option value="sel">---------Select---------</option>
+                <option value="Genaral">Genaral</option>
+                <option value="OBC">OBC</option>
+                <option value="SC/ST">SC/ST</option>
+                <option value="Others">Others</option>
+            </select>
+        </div> -->
+        <!-- <div class="input-box">
+            <span class="details">Annual Income</span>
+            <input type="number" placeholder="Enter annual income "  required name="income">
+        </div> -->
+    </div>
+    </div>
+    <div class="upload-file">
+        <h2>Documents</h2>
+        <div class="user-details">
+        <div class="input-box1">
+            <span class="details">Id proof of Parent (Adharcard,DL,pancard etc)</span>
+            <input type="file" required name="iproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">Address proof(ratio card,passport etc)</span>
+            <input type="file" required name="aproof">
+        </div>
+        <div class="input-box1">
+            <span class="details">Hospital Bill</span>
+            <input type="file" required name="hproof">
+        </div>
+        <div class="button">
+            <input type="submit" name="apply" value="Apply">
+          </div>
+        </form>
+        <br><br>
+        <form method="post" action="request.html">
+          <div class="button2">
+              <input type="submit"  value="CANCEL">
+            </div>
+        </form>
+    </div>
+</div>
+    </form>
+</div>
+</body>
+</html>
